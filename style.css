@@ -1,0 +1,261 @@
+/* Глобальные переменные и сброс стилей */
+:root {
+    --primary-red: #8c1e21;
+    --dark-red: #4a0f11;
+    --primary-teal: #0dcfd7;
+    --text-color: #c4c4c4;
+    --bg-color: #1a1a1a;
+    --panel-bg: #2a0a0c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+/* Экран-заставка */
+#enter-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.enter-box {
+    border: 2px solid var(--primary-teal);
+    padding: 40px;
+}
+
+    .enter-box h1 {
+        font-family: 'Orbitron', sans-serif;
+        color: var(--primary-teal);
+        letter-spacing: 5px;
+    }
+
+#enter-button {
+    background: transparent;
+    border: 1px solid var(--primary-red);
+    color: var(--primary-red);
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+    #enter-button:hover {
+        background: var(--primary-red);
+        color: white;
+    }
+
+
+/* Основной контейнер сайта */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Стили панелей */
+.panel {
+    background-color: var(--dark-red);
+    border: 1px solid #5e1f22;
+    border-top: 3px solid var(--primary-teal);
+    margin-bottom: 15px;
+    padding: 10px;
+    background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 1px, transparent 1px, transparent 3px);
+}
+
+.panel-title {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.panel-title-sm {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* Хедер */
+.global-header .top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    padding: 0 5px 10px 5px;
+    color: #888;
+}
+
+.global-header .main-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio-player {
+    border: 1px solid var(--primary-red);
+    padding: 5px 10px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    color: var(--primary-red);
+}
+
+.play-icon {
+    color: var(--primary-teal);
+}
+
+.main-nav {
+    display: flex;
+}
+
+    .main-nav a {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 10px 15px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 14px;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+        .main-nav a:hover, .main-nav a.active {
+            background-color: var(--primary-red);
+            color: white;
+            border-bottom-color: var(--primary-teal);
+        }
+
+/* Стили страниц */
+.page {
+    display: none; /* Скрыты по умолчанию */
+}
+
+    .page.active {
+        display: block; /* Активная страница видима */
+    }
+
+/* Главная страница */
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 15px;
+}
+
+.mainframe {
+    height: 400px;
+}
+
+.mainframe-content {
+    height: 90%;
+    background: #000 url('https://i.imgur.com/k91Bcrk.jpeg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #5e1f22;
+}
+
+.sidebar .panel {
+    margin-bottom: 15px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 10px;
+}
+
+.feature-text h4 {
+    color: var(--primary-teal);
+    margin-bottom: 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+}
+
+.update-list p {
+    margin-bottom: 10px;
+}
+
+.update-list span {
+    color: var(--primary-teal);
+    margin-right: 5px;
+}
+
+/* Другие страницы */
+.panel-content {
+    padding: 10px;
+    line-height: 1.6;
+}
+
+    .panel-content hr {
+        border: 0;
+        height: 1px;
+        background: var(--primary-red);
+        margin: 15px 0;
+    }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+    .gallery-grid img {
+        width: 100%;
+        border: 2px solid var(--primary-red);
+        transition: border-color 0.3s;
+    }
+
+        .gallery-grid img:hover {
+            border-color: var(--primary-teal);
+        }
+
+.links-list a {
+    color: var(--primary-teal);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+    .links-list a:hover {
+        color: white;
+    }
+
+/* Футер */
+.global-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    color: #888;
+    padding: 5px;
+}

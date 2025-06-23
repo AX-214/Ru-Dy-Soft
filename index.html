@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RU-DY-SOFT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Экран-заставка для запуска музыки -->
+    <div id="enter-screen">
+        <div class="enter-box">
+            <h1>SYSTEM ONLINE</h1>
+            <p>Нажмите для входа и активации звукового сопровождения</p>
+            <button id="enter-button">ENTER</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Глобальный хедер -->
+        <header class="global-header panel">
+            <div class="top-bar">
+                <span class="logo-text">V4.PROPHECY</span>
+                <span class="nav-label">> GLOBAL NAVIGATOR</span>
+            </div>
+            <div class="main-nav-container">
+                <div class="audio-player">
+                    <p class="panel-title-sm">> GLOBAL AMBIENCE</p>
+                    <div class="player-controls">
+                        <span>Dance Around The Floor</span>
+                        <div class="controls">
+                            <span><<</span> <span class="play-icon">■</span> <span>>></span>
+                        </div>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <a href="#" class="nav-link active" data-page="home">ГЛАВНАЯ</a>
+                    <a href="#" class="nav-link" data-page="about">О СЕБЕ</a>
+                    <a href="#" class="nav-link" data-page="gallery">ГАЛЕРЕЯ</a>
+                    <a href="#" class="nav-link" data-page="projects">ПРОЕКТЫ</a>
+                    <a href="#" class="nav-link" data-page="links">ССЫЛКИ</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Основной контент (страницы) -->
+        <main>
+            <!-- Главная страница -->
+            <section id="home" class="page active">
+                <div class="main-content-grid">
+                    <div class="mainframe panel">
+                        <h2 class="panel-title">>> MAINFRAME</h2>
+                        <div class="mainframe-content">
+                            <!-- Сюда можно вставить картинку как в оригинале -->
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="feature-system panel">
+                            <h3 class="panel-title-sm">> FEATURE SYSTEM</h3>
+                            <div class="feature-item">
+                                <img src="https://via.placeholder.com/120x80/cccccc/000000?text=IMAGE" alt="Feature">
+                                <div class="feature-text">
+                                    <h4>NEONRUSH</h4>
+                                    <p>Многопользовательский шутер от первого лица</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="press-updates panel">
+                            <h3 class="panel-title-sm">> PRESS UPDATES</h3>
+                            <div class="update-list">
+                                <p><span>+ 10.02.03</span> Недавно запущен наш новый партнерский сайт. Читайте интервью с нашим ведущим дизайнером.</p>
+                                <p><span>+ 29.01.03</span> Наш саунд-дизайнер выпустил новый трек, который доступен для скачивания.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Страница "О себе" -->
+            <section id="about" class="page">
+                <div class="panel">
+                    <h2 class="panel-title">>> О СЕБЕ</h2>
+                    <div class="panel-content">
+                        <p>Это страница разработчика Ru_Dy. Здесь находятся мои разработанные игры, программы и прочая хрень.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Страница "Галерея" -->
+            <section id="gallery" class="page">
+                <div class="panel">
+                    <h2 class="panel-title">>> ГАЛЕРЕЯ</h2>
+                    <div class="panel-content gallery-grid">
+                        <img src="https://via.placeholder.com/200x150/0d4f5a/ffffff?text=Art+1" alt="Art 1">
+                        <img src="https://via.placeholder.com/200x150/0d4f5a/ffffff?text=Art+2" alt="Art 2">
+                        <img src="https://via.placeholder.com/200x150/0d4f5a/ffffff?text=Art+3" alt="Art 3">
+                        <img src="https://via.placeholder.com/200x150/0d4f5a/ffffff?text=Art+4" alt="Art 4">
+                        <img src="https://via.placeholder.com/200x150/0d4f5a/ffffff?text=Art+5" alt="Art 5">
+                        <img src="https://via.placeholder.com/200x150/0d4f5a/ffffff?text=Art+6" alt="Art 6">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Страница "Проекты" -->
+            <section id="projects" class="page">
+                <div class="panel">
+                    <h2 class="panel-title">>> ПРОЕКТЫ</h2>
+                    <div class="panel-content">
+                        <h3>Neonrush</h3>
+                        <p>Многопользовательский 3D-шутер от первого лица.</p>
+                        <p>Статус: В разработке</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Страница "Ссылки" -->
+            <section id="links" class="page">
+                <div class="panel">
+                    <h2 class="panel-title">>> ССЫЛКИ</h2>
+                    <div class="panel-content links-list">
+                        <p><a href="https://t.me/gor0dishko" target="_blank">> ТЕЛЕГРАМ</a> - Телеграм-канал разработчика.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="global-footer panel">
+            <div class="footer-content">
+                <!--<span>>> PARTNERS: ULTRASHOCK, PLATINUMLOOPS</span>-->
+                <span class="copyright">COPYRIGHT (C) 2025 RU_DY.</span>
+            </div>
+        </footer>
+    </div>
+
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
